@@ -48,4 +48,61 @@ class Solution:
             
         
         
+        """
+        This code is not the most optimal. According to LeetCode, the most optimal iteration of this solution is:
         
+from queue import deque
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def insertionSortList(self, head: ListNode) -> ListNode:
+        
+        if not head:
+            return head
+        
+        q = head.next
+        stack = deque()
+        stack.append(head)
+        
+        while q:
+            if q.val >= stack[-1].val:
+                stack.append(q)
+                q = q.next
+            else:
+                p = None
+                prv = None
+                i = 0
+                while stack:
+                    p = stack.pop()
+                    if i == 0:
+                        i += 1
+                        prv = p
+                    if p.val < q.val:
+                        break
+                if p.val >= q.val:
+                    # q is the smallest
+                    prv.next = q.next
+                    q.next = p
+                    p = q
+                    q = prv.next
+                    while p != q:
+                        stack.append(p)
+                        p = p.next
+                else:
+                    prv.next = q.next
+                    q.next = p.next
+                    p.next = q
+                    q = prv.next
+                    while p != q:
+                        stack.append(p)
+                        p = p.next
+                #for n in stack:
+                #    print(n.val, end=',')
+                #print()
+        
+        return stack[0]
+        
+        """
