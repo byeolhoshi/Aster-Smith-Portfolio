@@ -1,10 +1,10 @@
 #from googletrans import Translator 
-import googletrans
+import googletrans #import api files 
 
 from googletrans import Translator 
 
 class trans:
-    
+    #trans[late] class
     def __init__(self, filepath): 
         self.translator = Translator()
         self.target_lang = ''
