@@ -50,7 +50,7 @@ class Solution:
         
         """
         This code is not the most optimal. According to LeetCode, the most optimal iteration of this solution is:
-        
+(3184 ms) 
 from queue import deque
 # Definition for singly-linked list.
 # class ListNode:
