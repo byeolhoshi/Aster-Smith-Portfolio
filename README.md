@@ -13,3 +13,5 @@ HackerRank: https://www.hackerrank.com/aclriel
 
 
 October 2020 Resume: https://drive.google.com/file/d/1XjQWf2ANLcieDIJGmbwr4xBSwMmAa72a/view?usp=sharing
+
+**Google Trans API Project** - Simple program that translates code into a provided language. Not refined but I'm still pretty proud of getting it to work. 
