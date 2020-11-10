@@ -13,3 +13,6 @@ HackerRank: https://www.hackerrank.com/aclriel
 
 
 October 2020 Resume: https://drive.google.com/file/d/1XjQWf2ANLcieDIJGmbwr4xBSwMmAa72a/view?usp=sharing
+
+
+***Google Trans API Branch*** : Look at for a small project using python google translate package
